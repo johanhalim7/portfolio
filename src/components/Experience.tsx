@@ -5,82 +5,61 @@ import { experiences } from '@/data/experience';
 
 export default function Experience() {
   return (
-    <section
-      id="pengalaman"
-      className="bg-white dark:bg-slate-950"
-    >
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-16 md:py-24">
+    <section id="pengalaman" className="bg-white dark:bg-slate-950">
+      <div className="max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-16">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-2">
             Pengalaman
           </h2>
-          <div className="w-16 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full" />
+          <div className="w-12 h-1 bg-blue-600 dark:bg-blue-400 rounded-full" />
         </motion.div>
 
-        {/* Timeline */}
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800 md:-translate-x-0.5" />
-
-          <div className="space-y-12">
-            {experiences.map((exp, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className={`relative flex flex-col md:flex-row ${
-                  i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } items-start md:items-center gap-6 md:gap-12`}
-              >
-                {/* Dot */}
-                <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full ring-4 ring-white dark:ring-slate-950 -translate-x-1.5 md:-translate-x-1.5 mt-6 md:mt-0 z-10" />
-
-                {/* Content card */}
-                <div
-                  className={`ml-10 md:ml-0 md:w-[calc(50%-3rem)] ${
-                    i % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                  }`}
-                >
-                  <div className="p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
-                    <span className="inline-block text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-full mb-3">
-                      {exp.period}
-                    </span>
-                    <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">
-                      {exp.title}
-                    </h3>
-                    <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-3">
-                      {exp.company}
-                    </p>
-                    <ul
-                      className={`space-y-2 ${
-                        i % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                      }`}
-                    >
-                      {exp.descriptions.map((desc, j) => (
-                        <li
-                          key={j}
-                          className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
-                        >
-                          {desc}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Spacer for other side */}
-                <div className="hidden md:block md:w-[calc(50%-3rem)]" />
-              </motion.div>
-            ))}
-          </div>
+        {/* Compact Left-Aligned Timeline */}
+        <div className="relative border-l border-slate-200 dark:border-slate-800 ml-3 md:ml-4 space-y-8">
+          {experiences.map((exp, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="relative pl-6 md:pl-8"
+            >
+              {/* Timeline Dot */}
+              <div className="absolute left-[-5px] top-1.5 w-2.5 h-2.5 bg-blue-600 dark:bg-blue-400 rounded-full ring-4 ring-white dark:ring-slate-950" />
+              
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                  {exp.title}
+                </h3>
+                <span className="inline-block text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/50 px-2.5 py-1 rounded-md mt-2 md:mt-0">
+                  {exp.period}
+                </span>
+              </div>
+              <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-3">
+                {exp.company}
+              </p>
+              
+              <ul className="space-y-1.5">
+                {exp.descriptions.map((desc, j) => (
+                  <li key={j} className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed flex items-start">
+                    <span className="text-blue-400 dark:text-blue-600 mr-2 mt-0.5">•</span>
+                    {desc.startsWith('Source Code:') ? (
+                      <a href={`https://${desc.replace('Source Code: ', '')}`} target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">
+                        {desc}
+                      </a>
+                    ) : desc}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

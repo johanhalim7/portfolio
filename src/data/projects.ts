@@ -2,26 +2,38 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "Sistem Verifikasi Dokumen Ijazah Digital Berbasis Blockchain",
+    title: "IjazahChain — Sistem Verifikasi Dokumen Ijazah Digital Berbasis Blockchain",
     description:
-      "Proyek skripsi yang membangun sistem full-stack untuk verifikasi keaslian ijazah menggunakan teknologi blockchain. Sistem ini mencegah pemalsuan dokumen dengan menyimpan hash dokumen di smart contract Ethereum, dilengkapi dengan alur kerja multi-approver dan integrasi OCR berbasis AI.",
+      "Sistem full-stack untuk verifikasi keaslian ijazah menggunakan teknologi blockchain. Sistem ini mencegah pemalsuan dokumen dengan menyimpan hash dokumen di smart contract Ethereum, dilengkapi dengan alur kerja multi-approver, OCR berbasis AI, dan integrasi wallet.",
     techStack: [
       "Solidity",
       "Laravel",
+      "Next.js",
       "Ethers.js",
       "MetaMask",
-      "SHA-256",
-      "EIP-712",
       "Google Gemini API",
+      "OWASP ZAP",
+      "Apache JMeter"
     ],
     features: [
-      "Smart contract Solidity untuk penyimpanan dan verifikasi hash dokumen",
-      "Backend Laravel untuk pengelolaan data dan alur kerja",
-      "Integrasi MetaMask dan Ethers.js untuk interaksi dengan blockchain",
-      "Hashing SHA-256 untuk menghasilkan sidik jari digital dokumen",
-      "Standar EIP-712 untuk penandatanganan data terstruktur",
-      "Alur kerja multi-approver untuk proses persetujuan bertingkat",
-      "OCR berbasis AI menggunakan Google Gemini API untuk ekstraksi data dokumen",
+      "Smart contract Solidity (Ethereum) untuk penyimpanan dan verifikasi hash dokumen",
+      "Hashing SHA-256 dan standar EIP-712 untuk penandatanganan digital",
+      "Alur kerja multi-approver yang dapat dikonfigurasi",
+      "Ekstraksi data dokumen otomatis menggunakan OCR (Google Gemini API)",
+      "Pengujian keamanan menggunakan OWASP ZAP (tidak ditemukan kerentanan High-risk)",
+      "Pengujian performa menggunakan Apache JMeter (0% error rate, response <200ms)",
+      "Repository: github.com/johanhalim7/ijazahchain"
+    ],
+  },
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "Website portofolio pribadi yang responsif untuk menampilkan proyek, keahlian, dan pengalaman profesional.",
+    techStack: ["Next.js", "Tailwind CSS", "Vercel"],
+    features: [
+      "Antarmuka responsif dan modern dengan Tailwind CSS",
+      "Routing dan rendering optimal menggunakan Next.js",
+      "Live: johanhalim.vercel.app"
     ],
   },
   {
@@ -33,8 +45,7 @@ export const projects: Project[] = [
       "CRUD lengkap untuk pengelolaan data perjalanan dinas",
       "Sistem autentikasi dan otorisasi pengguna",
       "Fitur pelaporan untuk rekapitulasi perjalanan dinas",
-      "Antarmuka responsif menggunakan Bootstrap",
-      "Validasi data untuk memastikan integritas informasi",
+      "Repository: github.com/johanhalim7/perjalanan-dinas-dprd"
     ],
   },
 ];

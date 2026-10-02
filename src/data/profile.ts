@@ -2,13 +2,17 @@ import type { Profile } from "@/types";
 
 export const profile: Profile = {
   name: "Johan Halim",
-  title: "Software Engineer",
+  title: "S1 Informatics Engineering | Web & Software Developer | System Analysis & QA",
   location: "Cirebon, Indonesia",
   email: "johanhalim.ai@gmail.com",
   phone: "(+62) 821-1788-6391",
-  linkedin: "linkedin.com/in/johan-halim-8039512ab",
+  linkedin: "linkedin.com/in/johanhlm",
   summary:
-    "Lulusan Teknik Informatika dari Universitas Muhammadiyah Cirebon dengan pengalaman langsung dalam pengembangan web. Membangun sistem verifikasi ijazah digital berbasis blockchain sebagai proyek skripsi, mencakup pengembangan smart contract, integrasi backend, dan perancangan alur kerja (workflow). Terbiasa memanfaatkan alat bantu AI untuk mempercepat proses pengembangan dan pemecahan masalah. Mencari peran Software Engineer untuk menerapkan kemampuan di PHP/Laravel, MySQL, dan JavaScript.",
+    `Lulusan Teknik Informatika (S1) dari Universitas Muhammadiyah Cirebon dengan pengalaman dalam seluruh siklus pengembangan perangkat lunak (SDLC) — mulai dari analisis kebutuhan, perancangan sistem, implementasi, hingga pengujian (QA).
+
+Familiar dengan ekosistem web modern (PHP/Laravel, Next.js), pengembangan mobile hybrid (Ionic), serta teknologi blockchain (Solidity, Ethereum). Terbiasa menggunakan alat bantu testing seperti OWASP ZAP dan Apache JMeter, serta memanfaatkan AI untuk efisiensi pengembangan.
+
+Saat ini terbuka untuk peluang karir di bidang Web/Mobile Development, Analisis Sistem, maupun Quality Assurance (QA).`,
   education: {
     university: "Universitas Muhammadiyah Cirebon",
     degree: "S1 Teknik Informatika",

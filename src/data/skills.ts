@@ -2,19 +2,34 @@ import type { Skill } from "@/types";
 
 export const skills: Skill[] = [
   {
-    category: "Bahasa & Framework",
+    category: "Web & Mobile Development",
     items: [
       { name: "PHP" },
       { name: "Laravel" },
       { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "CSS" },
+      { name: "Next.js" },
+      { name: "Ionic Framework" },
+      { name: "HTML/CSS" },
+      { name: "Tailwind CSS" },
       { name: "Bootstrap" },
     ],
   },
   {
-    category: "Database",
-    items: [{ name: "MySQL" }],
+    category: "Database & System Analysis",
+    items: [
+      { name: "MySQL" },
+      { name: "System Analysis" },
+      { name: "ERD & Flowchart" }
+    ],
+  },
+  {
+    category: "Testing & QA",
+    items: [
+      { name: "Software Testing" },
+      { name: "OWASP ZAP" },
+      { name: "Apache JMeter" },
+      { name: "Functional Testing" }
+    ],
   },
   {
     category: "Blockchain",
@@ -27,13 +42,6 @@ export const skills: Skill[] = [
   },
   {
     category: "Alat Pengembangan",
-    items: [{ name: "Git" }, { name: "AI Development Tools" }],
-  },
-  {
-    category: "Bahasa",
-    items: [
-      { name: "Bahasa Indonesia (Aktif)" },
-      { name: "Bahasa Inggris (Menengah)" },
-    ],
+    items: [{ name: "Git" }, { name: "AI Development Tools" }, { name: "Google Gemini API" }],
   },
 ];
