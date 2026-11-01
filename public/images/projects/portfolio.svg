@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="shadowPort" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#portBg)" />
+  <circle cx="950" cy="200" r="240" fill="#3b82f6" opacity="0.15" filter="blur(80px)" />
+  <circle cx="200" cy="500" r="200" fill="#8b5cf6" opacity="0.15" filter="blur(80px)" />
+
+  <g transform="translate(60, 45)" filter="url(#shadowPort)">
+    <rect width="1080" height="585" rx="14" fill="#090d16" stroke="#334155" stroke-width="1.5" />
+    <rect width="1080" height="42" rx="14" fill="#131b2e" />
+    <circle cx="24" cy="21" r="6" fill="#ef4444" />
+    <circle cx="44" cy="21" r="6" fill="#f59e0b" />
+    <circle cx="64" cy="21" r="6" fill="#10b981" />
+
+    <rect x="300" y="8" width="480" height="26" rx="6" fill="#0b1120" stroke="#1e293b" />
+    <text x="540" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">
+      http://localhost:3000
+    </text>
+
+    <!-- Content Showcase -->
+    <g transform="translate(50, 75)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      <rect x="0" y="0" width="130" height="26" rx="13" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+      <text x="65" y="17" fill="#60a5fa" font-size="11" font-weight="700" text-anchor="middle">PORTFOLIO</text>
+
+      <text x="0" y="70" fill="#ffffff" font-size="34" font-weight="800">
+        Johan Halim <tspan fill="#3b82f6">Personal Portfolio</tspan>
+      </text>
+      <text x="0" y="105" fill="#94a3b8" font-size="16">
+        Modern Engineering Showcase with Next.js, React, Tailwind CSS &amp; Bilingual i18n
+      </text>
+
+      <!-- Lighthouse & Metric Badges -->
+      <g transform="translate(0, 140)">
+        <rect width="210" height="110" rx="10" fill="#0f172a" stroke="#1e293b" />
+        <circle cx="45" cy="55" r="28" fill="#064e3b" stroke="#10b981" stroke-width="2" />
+        <text x="45" y="60" fill="#34d399" font-size="15" font-weight="800" text-anchor="middle">100</text>
+        <text x="90" y="48" fill="#f8fafc" font-size="13" font-weight="700">Performance</text>
+        <text x="90" y="68" fill="#10b981" font-size="11">Google Lighthouse</text>
+
+        <g transform="translate(230, 0)">
+          <rect width="210" height="110" rx="10" fill="#0f172a" stroke="#1e293b" />
+          <circle cx="45" cy="55" r="28" fill="#064e3b" stroke="#10b981" stroke-width="2" />
+          <text x="45" y="60" fill="#34d399" font-size="15" font-weight="800" text-anchor="middle">100</text>
+          <text x="90" y="48" fill="#f8fafc" font-size="13" font-weight="700">SEO &amp; Best Pract.</text>
+          <text x="90" y="68" fill="#10b981" font-size="11">Structured Schema</text>
+        </g>
+
+        <g transform="translate(460, 0)">
+          <rect width="210" height="110" rx="10" fill="#0f172a" stroke="#1e293b" />
+          <circle cx="45" cy="55" r="28" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" />
+          <text x="45" y="60" fill="#60a5fa" font-size="13" font-weight="800" text-anchor="middle">v16</text>
+          <text x="90" y="48" fill="#f8fafc" font-size="13" font-weight="700">Next.js Turbopack</text>
+          <text x="90" y="68" fill="#38bdf8" font-size="11">React 19 Server/Client</text>
+        </g>
+
+        <g transform="translate(690, 0)">
+          <rect width="240" height="110" rx="10" fill="#0f172a" stroke="#1e293b" />
+          <circle cx="45" cy="55" r="28" fill="#4c1d95" stroke="#a855f7" stroke-width="2" />
+          <text x="45" y="60" fill="#c084fc" font-size="13" font-weight="800" text-anchor="middle">i18n</text>
+          <text x="90" y="48" fill="#f8fafc" font-size="13" font-weight="700">Bilingual Support</text>
+          <text x="90" y="68" fill="#c084fc" font-size="11">ID &amp; EN Dynamic Toggle</text>
+        </g>
+      </g>
+
+      <!-- Visual Preview Cards of Sections -->
+      <g transform="translate(0, 280)">
+        <rect width="930" height="160" rx="12" fill="#0b1120" stroke="#1e293b" />
+        <text x="30" y="40" fill="#38bdf8" font-size="13" font-weight="700">✨ INTERACTIVE HIGHLIGHTS</text>
+        <text x="30" y="70" fill="#f1f5f9" font-size="14">
+          • Featured Case Study Modal dengan arsitektur blockchain &amp; hasil audit QA
+        </text>
+        <text x="30" y="98" fill="#f1f5f9" font-size="14">
+          • Dark / Light Mode tersimpan secara instan di LocalStorage tanpa flash
+        </text>
+        <text x="30" y="126" fill="#f1f5f9" font-size="14">
+          • Direct Action Buttons: Akses 1-Klik ke Live Demo &amp; Repositori GitHub
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

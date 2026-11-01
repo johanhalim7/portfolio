@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Starburst/Seal -->
+  <circle cx="100" cy="100" r="92" fill="#d97706" opacity="0.2" />
+  <circle cx="100" cy="100" r="82" fill="url(#goldGrad)" stroke="#fef3c7" stroke-width="3" />
+  
+  <!-- Inner Shield -->
+  <path d="M100 35 L155 58 C155 110 100 150 100 150 C100 150 45 110 45 58 Z" fill="url(#shieldGrad)" stroke="#fbbf24" stroke-width="2.5" />
+  
+  <!-- Garuda/Emblem Monogram -->
+  <text x="100" y="88" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Arial Black', sans-serif" font-weight="900" font-size="20" text-anchor="middle" letter-spacing="1">
+    BNSP
+  </text>
+  <path d="M72 100 L128 100" stroke="#f59e0b" stroke-width="1.5" />
+  <text x="100" y="116" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="10" text-anchor="middle">
+    KOMPETEN
+  </text>
+  <text x="100" y="130" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600" font-size="8" text-anchor="middle">
+    INDONESIA
+  </text>
+
+  <!-- Star accents -->
+  <polygon points="100,162 103,170 112,170 105,175 107,183 100,178 93,183 95,175 88,170 97,170" fill="#fbbf24" />
+</svg>

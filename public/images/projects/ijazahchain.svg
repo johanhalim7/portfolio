@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+
+  <!-- Background Glow & Grid Accents -->
+  <circle cx="200" cy="150" r="180" fill="#2563eb" opacity="0.15" filter="blur(60px)" />
+  <circle cx="1000" cy="500" r="220" fill="#7c3aed" opacity="0.15" filter="blur(80px)" />
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(60, 45)" filter="url(#shadow)">
+    <!-- Browser Chrome Frame -->
+    <rect width="1080" height="585" rx="14" fill="#090d16" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="1080" height="42" rx="14" fill="#131b2e" />
+    <circle cx="24" cy="21" r="6" fill="#ef4444" />
+    <circle cx="44" cy="21" r="6" fill="#f59e0b" />
+    <circle cx="64" cy="21" r="6" fill="#10b981" />
+
+    <!-- Address Bar (Local Dev URL) -->
+    <rect x="240" y="8" width="600" height="26" rx="6" fill="#0b1120" stroke="#1e293b" />
+    <text x="540" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
+      http://localhost:8000/verify?hash=0x7fa281b9e29a...
+    </text>
+
+    <!-- App Header Navbar -->
+    <rect x="0" y="42" width="1080" height="55" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="40" y="77" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="18">
+      Ijazah<tspan fill="#38bdf8">Chain</tspan>
+    </text>
+    <text x="165" y="76" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+      | Sistem Verifikasi Dokumen Digital Berbasis Blockchain Ethereum (Laravel)
+    </text>
+
+    <!-- Wallet Connection Badge -->
+    <rect x="880" y="55" width="160" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="900" cy="70" r="4" fill="#10b981" />
+    <text x="965" y="74" fill="#38bdf8" font-family="monospace" font-size="12" text-anchor="middle">
+      MetaMask Connected
+    </text>
+
+    <!-- Main Content Grid -->
+    <!-- Left Column: Verification Card -->
+    <g transform="translate(40, 115)">
+      <rect width="600" height="430" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" />
+      
+      <!-- Verification Status Banner -->
+      <rect x="25" y="25" width="550" height="50" rx="8" fill="url(#badgeGrad)" opacity="0.15" stroke="#10b981" stroke-width="1" />
+      <circle cx="50" cy="50" r="10" fill="#10b981" />
+      <path d="M46 50 L49 53 L55 47" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+      <text x="75" y="48" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14">
+        STATUS: HASH DOKUMEN TERVERIFIKASI PADA BLOCKCHAIN
+      </text>
+      <text x="75" y="63" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">
+        Tercatat pada Ethereum Smart Contract dengan Tanda Tangan Digital Pejabat
+      </text>
+
+      <!-- Document Metadata Details -->
+      <g transform="translate(25, 95)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+        <text x="0" y="20" fill="#64748b" font-size="11" font-weight="600">NAMA LULUSAN &amp; GELAR</text>
+        <text x="0" y="42" fill="#f8fafc" font-size="16" font-weight="700">JOHAN HALIM — S.Kom (Teknik Informatika)</text>
+
+        <text x="0" y="80" fill="#64748b" font-size="11" font-weight="600">NOMOR SERI IJAZAH</text>
+        <text x="0" y="100" fill="#38bdf8" font-family="monospace" font-size="13">UMC-TI-2026-984210</text>
+
+        <text x="0" y="140" fill="#64748b" font-size="11" font-weight="600">SHA-256 DOCUMENT HASH</text>
+        <rect x="0" y="150" width="550" height="32" rx="6" fill="#090d16" stroke="#1e293b" />
+        <text x="15" y="171" fill="#94a3b8" font-family="monospace" font-size="11">
+          0x7fa281b9e29ad8b29c017d84f884c173e21849a20d1c8f491c1072
+        </text>
+
+        <text x="0" y="215" fill="#64748b" font-size="11" font-weight="600">MULTI-APPROVER SIGNATURES (EIP-712)</text>
+        <rect x="0" y="225" width="170" height="36" rx="6" fill="#0b1329" stroke="#2563eb" stroke-width="1" />
+        <text x="12" y="247" fill="#60a5fa" font-size="11">✓ Dekan Fakultas (Signed)</text>
+
+        <rect x="185" y="225" width="170" height="36" rx="6" fill="#0b1329" stroke="#2563eb" stroke-width="1" />
+        <text x="197" y="247" fill="#60a5fa" font-size="11">✓ Rektor UMC (Signed)</text>
+
+        <rect x="370" y="225" width="180" height="36" rx="6" fill="#0b1329" stroke="#2563eb" stroke-width="1" />
+        <text x="382" y="247" fill="#60a5fa" font-size="11">✓ BAAK (Signed)</text>
+
+        <!-- Smart Contract Link Badge -->
+        <g transform="translate(0, 280)">
+          <text x="0" y="15" fill="#64748b" font-size="11" font-weight="600">SOLIDITY SMART CONTRACT</text>
+          <text x="0" y="35" fill="#a855f7" font-family="monospace" font-size="12">0x3E19f39B1c04543b5AcF1dFe3A8498218C3B</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Column: Architecture & Testing -->
+    <g transform="translate(660, 115)">
+      <!-- AI OCR Extraction Box -->
+      <rect width="380" height="135" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" />
+      <g transform="translate(20, 25)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+        <text x="0" y="0" fill="#f59e0b" font-size="11" font-weight="700">🤖 GOOGLE GEMINI VISION OCR</text>
+        <text x="0" y="22" fill="#f8fafc" font-size="14" font-weight="600">Ekstraksi Metadata Dokumen</text>
+        <text x="0" y="44" fill="#94a3b8" font-size="12">
+          Ekstraksi otomatis entitas ijazah digital secara cepat ke format terstruktur.
+        </text>
+        <rect x="0" y="60" width="130" height="24" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="0.8" />
+        <text x="65" y="76" fill="#fbbf24" font-size="10" text-anchor="middle">OCR + Structured JSON</text>
+      </g>
+
+      <!-- Testing Box -->
+      <g transform="translate(0, 150)">
+        <rect width="380" height="140" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" />
+        <g transform="translate(20, 25)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+          <text x="0" y="0" fill="#38bdf8" font-size="11" font-weight="700">📊 PENGUJIAN SISTEM &amp; BEBAN</text>
+          
+          <g transform="translate(0, 18)">
+            <rect width="165" height="75" rx="8" fill="#0b1120" stroke="#334155" />
+            <text x="12" y="22" fill="#10b981" font-size="15" font-weight="700">OWASP ZAP</text>
+            <text x="12" y="40" fill="#64748b" font-size="10">Uji Keamanan Web</text>
+            <text x="12" y="58" fill="#94a3b8" font-size="9">0 High Vulnerability</text>
+          </g>
+
+          <g transform="translate(175, 18)">
+            <rect width="165" height="75" rx="8" fill="#0b1120" stroke="#334155" />
+            <text x="12" y="22" fill="#38bdf8" font-size="15" font-weight="700">Apache JMeter</text>
+            <text x="12" y="40" fill="#64748b" font-size="10">Uji Beban &amp; Respon</text>
+            <text x="12" y="58" fill="#94a3b8" font-size="9">Respon Stabil &lt; 200ms</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Tech Stack Badges Strip -->
+      <g transform="translate(0, 305)">
+        <rect width="380" height="125" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" />
+        <g transform="translate(20, 25)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+          <text x="0" y="0" fill="#94a3b8" font-size="11" font-weight="600">CORE TECH STACK</text>
+          <g transform="translate(0, 15)">
+            <rect x="0" y="0" width="85" height="24" rx="6" fill="#1e293b" />
+            <text x="42" y="16" fill="#cbd5e1" font-size="11" text-anchor="middle">Solidity</text>
+
+            <rect x="95" y="0" width="85" height="24" rx="6" fill="#1e293b" />
+            <text x="137" y="16" fill="#cbd5e1" font-size="11" text-anchor="middle">Laravel</text>
+
+            <rect x="190" y="0" width="75" height="24" rx="6" fill="#1e293b" />
+            <text x="227" y="16" fill="#cbd5e1" font-size="11" text-anchor="middle">PHP</text>
+
+            <rect x="275" y="0" width="75" height="24" rx="6" fill="#1e293b" />
+            <text x="312" y="16" fill="#cbd5e1" font-size="11" text-anchor="middle">MySQL</text>
+
+            <rect x="0" y="32" width="85" height="24" rx="6" fill="#1e293b" />
+            <text x="42" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle">Ethers.js</text>
+
+            <rect x="95" y="32" width="85" height="24" rx="6" fill="#1e293b" />
+            <text x="137" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle">MetaMask</text>
+
+            <rect x="190" y="32" width="160" height="24" rx="6" fill="#1e293b" />
+            <text x="270" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle">Google Gemini API</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
