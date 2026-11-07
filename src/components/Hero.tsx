@@ -75,7 +75,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.15 }}
-          className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-6 max-w-3xl mx-auto leading-snug"
+          className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-6 mx-auto leading-snug lg:whitespace-nowrap"
         >
           {profile.title[lang]}
         </motion.h2>

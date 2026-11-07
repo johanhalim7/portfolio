@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://johanhalim.vercel.app"),
-  title: "Johan Halim — Web & Software Developer Portfolio",
+  title: "Johan Halim — Software Engineer | Full-Stack Developer | QA Engineer | AI Engineer",
   description:
     "Portofolio Johan Halim, lulusan S1 Teknik Informatika Universitas Muhammadiyah Cirebon. Berpengalaman dalam pengembangan aplikasi web (PHP/Laravel, Next.js), basis data MySQL, dan teknologi Blockchain.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   openGraph: {
-    title: "Johan Halim — Web & Software Developer Portfolio",
+    title: "Johan Halim — Software Engineer | Full-Stack Developer | QA Engineer | AI Engineer",
     description:
       "Portofolio Johan Halim, Web & Software Developer. Menampilkan proyek web modern, smart contract Ethereum (IjazahChain), dan sistem informasi instansi.",
     url: "https://johanhalim.vercel.app",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Johan Halim — Web & Software Developer Portfolio",
+        alt: "Johan Halim — Software Engineer | Full-Stack Developer | QA Engineer | AI Engineer",
       },
     ],
     locale: "id_ID",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Johan Halim — Web & Software Developer Portfolio",
+    title: "Johan Halim — Software Engineer | Full-Stack Developer | QA Engineer | AI Engineer",
     description:
       "Portofolio Johan Halim, Web & Software Developer lulusan S1 Teknik Informatika UMC.",
     images: ["/images/og-image.svg"],
