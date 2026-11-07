@@ -18,10 +18,10 @@ function GithubIcon({ size = 16 }: { size?: number }) {
 }
 
 const highlightIcons = [
-  <Terminal key="terminal" size={18} className="text-blue-500" />,
-  <Layers key="layers" size={18} className="text-indigo-500" />,
-  <Blocks key="blocks" size={18} className="text-purple-500" />,
-  <Award key="award" size={18} className="text-amber-500" />,
+  <Terminal key="terminal" size={22} className="text-blue-500" />,
+  <Layers key="layers" size={22} className="text-indigo-500" />,
+  <Blocks key="blocks" size={22} className="text-purple-500" />,
+  <Award key="award" size={22} className="text-amber-500" />,
 ];
 
 export default function Hero() {
@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <section
       id="beranda"
-      className="min-h-[90vh] lg:min-h-[82vh] flex items-center justify-center pt-24 pb-16 lg:pb-12 bg-white dark:bg-slate-950 relative overflow-hidden"
+      className="pt-28 pb-14 md:pt-32 md:pb-20 bg-white dark:bg-slate-950 relative overflow-hidden"
     >
       {/* Subtle Background Mesh / Gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[450px] opacity-35 dark:opacity-20 pointer-events-none">
@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight"
+          className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight"
         >
           {lang === 'id' ? 'Halo, saya ' : "Hi, I'm "}
           <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
@@ -70,7 +70,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.15 }}
-          className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-6 mx-auto leading-snug lg:whitespace-nowrap"
+          className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-8 mx-auto leading-snug lg:whitespace-nowrap"
         >
           {profile.title[lang]}
         </motion.h2>
@@ -80,18 +80,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.25 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto mb-10 text-left"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10 text-left"
         >
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-50/90 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800/80 shadow-xs hover:border-blue-400/50 transition-colors"
+              className="p-5 rounded-xl bg-slate-50/90 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800/80 shadow-xs hover:border-blue-400/50 transition-colors"
             >
-              <div className="mb-2">{highlightIcons[idx % highlightIcons.length]}</div>
-              <p className="text-xs font-bold text-slate-900 dark:text-slate-100">
+              <div className="mb-3">{highlightIcons[idx % highlightIcons.length]}</div>
+              <p className="text-sm font-bold text-slate-900 dark:text-slate-100">
                 {item.label}
               </p>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 {item.sublabel}
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function Hero() {
         >
           <a
             href="#proyek"
-            className="group inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all shadow-md shadow-blue-600/25 active:scale-95"
+            className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all shadow-md shadow-blue-600/25 active:scale-95"
           >
             {t.hero.viewProjects}
             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -117,7 +117,7 @@ export default function Hero() {
             href={`https://${profile.github}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium transition-all active:scale-95 shadow-xs"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium transition-all active:scale-95 shadow-xs"
           >
             <GithubIcon size={16} />
             GitHub
@@ -127,7 +127,7 @@ export default function Hero() {
             href={lang === 'en' ? '/documents/cv-en.pdf' : '/documents/cv.pdf'}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium transition-all active:scale-95 shadow-xs"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium transition-all active:scale-95 shadow-xs"
           >
             <Download size={16} />
             {t.hero.downloadCv}
