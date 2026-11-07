@@ -84,7 +84,7 @@ export default function About() {
             viewport={{ once: true }}
             className="lg:col-span-7"
           >
-            <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8 space-y-3.5 text-sm sm:text-base">
+            <div className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8 space-y-3.5 text-sm sm:text-base text-center md:text-justify">
               {summaryParagraphs.map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
