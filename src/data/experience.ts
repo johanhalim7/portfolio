@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
       id: "Software Developer Intern",
       en: "Software Developer Intern",
     },
-    company: "DPRD Kota Cirebon (Sekretariat Daerah)",
+    company: "Sekretariat DPRD Kota Cirebon",
     location: "Cirebon, Indonesia",
     period: "Okt 2025 - Des 2025",
     type: "kerja",

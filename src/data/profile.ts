@@ -3,10 +3,10 @@ import type { Profile } from "@/types";
 export const profile: Profile = {
   name: "Johan Halim",
   title: {
-    id: "Web & Software Developer | S1 Teknik Informatika",
-    en: "Web & Software Developer | B.S. in Informatics Engineering",
+    id: "Software Engineer | Full-Stack Developer | QA Engineer | AI Engineer",
+    en: "Software Engineer | Full-Stack Developer | QA Engineer | AI Engineer",
   },
-  location: "Cirebon, Indonesia",
+  location: "Kota Tangerang, Banten, Indonesia",
   email: "johanhalim.ai@gmail.com",
   phone: "(+62) 821-1788-6391",
   linkedin: "linkedin.com/in/johanhlm",
@@ -26,16 +26,8 @@ export const profile: Profile = {
     ],
   },
   summary: {
-    id: `Lulusan Teknik Informatika (S1) dari Universitas Muhammadiyah Cirebon dengan pengalaman dalam seluruh siklus pengembangan perangkat lunak (SDLC) — mulai dari analisis kebutuhan, perancangan arsitektur sistem, implementasi, hingga pengujian perangkat lunak.
-
-Familiar dengan ekosistem web modern (PHP/Laravel, Next.js), pengembangan mobile hybrid (Ionic), serta eksplorasi smart contract blockchain (Solidity, Ethereum). Terbiasa menerapkan praktik clean code, pemanfaatan alat bantu AI untuk efisiensi pengembangan, dan pengujian sistem yang terstruktur.
-
-Terbuka untuk peluang karir di bidang Web & Software Development, Frontend/Backend Engineer, maupun Analisis Sistem.`,
-    en: `Informatics Engineering graduate (B.S.) from Universitas Muhammadiyah Cirebon with solid experience across the entire Software Development Life Cycle (SDLC) — from requirement analysis and system architecture design to clean code implementation and testing.
-
-Proficient in the modern web ecosystem (PHP/Laravel, Next.js), hybrid mobile development (Ionic), and blockchain smart contracts (Solidity, Ethereum). Accustomed to applying best coding practices, leveraging AI tools for development productivity, and structured software testing.
-
-Actively seeking opportunities as a Web & Software Developer, Frontend/Backend Engineer, or Systems Analyst.`,
+    id: `Lulusan S1 Teknik Informatika yang membangun aplikasi web secara menyeluruh, dari perancangan sampai pengujian, dengan Laravel/MySQL dan Next.js/TypeScript. Berpengalaman mengembangkan sistem informasi untuk instansi pemerintah daerah selama magang, membangun sistem verifikasi ijazah berbasis blockchain sebagai proyek skripsi, dan merilis aplikasi web yang sudah live dan digunakan publik. Memiliki motivasi tinggi untuk terus belajar dan mudah beradaptasi. Terbuka untuk peran Software Engineer, Full-Stack Developer, QA Engineer, dan AI Engineer.`,
+    en: `Informatics Engineering graduate (B.S.) who builds web applications end to end, from design to testing, with Laravel/MySQL and Next.js/TypeScript. Experienced in developing information systems for a local government institution during an internship, building a blockchain-based diploma verification system as a thesis project, and releasing web applications that are live and used by the public. Highly motivated to keep learning and quick to adapt. Open to roles in Software Engineering, Full-Stack Development, QA Engineering, and AI Engineering.`,
   },
   education: {
     university: "Universitas Muhammadiyah Cirebon",
