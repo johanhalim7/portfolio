@@ -134,14 +134,14 @@ export default function Projects() {
                   </div>
 
                   {/* Dedicated Action Buttons */}
-                  <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700/60">
+                  <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3 pt-4 border-t border-slate-100 dark:border-slate-700/60">
                     {/* Live Demo Button */}
                     {project.demo && (
                       <a
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-xs transition-colors active:scale-95"
+                        className="inline-flex items-center justify-center w-full sm:w-auto gap-1.5 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-xs transition-colors active:scale-95"
                       >
                         <ExternalLink size={14} />
                         {t.projects.liveDemo}
@@ -154,7 +154,7 @@ export default function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-750 text-xs font-semibold transition-colors active:scale-95"
+                        className="inline-flex items-center justify-center w-full sm:w-auto gap-1.5 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-750 text-xs font-semibold transition-colors active:scale-95"
                       >
                         <GithubIcon size={14} />
                         {t.projects.sourceCode}
@@ -165,7 +165,7 @@ export default function Projects() {
                     {project.caseStudy && (
                       <button
                         onClick={() => setSelectedCaseStudy(project)}
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-xs font-semibold transition-colors cursor-pointer active:scale-95 ml-auto"
+                        className="inline-flex items-center justify-center w-full sm:w-auto gap-1.5 px-4 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-xs font-semibold transition-colors cursor-pointer active:scale-95 sm:ml-auto"
                       >
                         <Sparkles size={13} className="text-indigo-500" />
                         {t.projects.caseStudyBtn}
