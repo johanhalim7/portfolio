@@ -10,14 +10,14 @@ export default function Certifications() {
   const { lang, t } = useLanguage();
 
   return (
-    <section id="sertifikasi" className="bg-white dark:bg-slate-950 py-16 md:py-24">
+    <section id="sertifikasi" className="bg-white dark:bg-slate-950 py-16 md:py-[4.5rem]">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-12 md:mb-9"
         >
           <div className="inline-block px-3 py-1 mb-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
             {t.certifications.title}

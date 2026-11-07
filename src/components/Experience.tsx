@@ -9,7 +9,7 @@ export default function Experience() {
   const { lang, t } = useLanguage();
 
   return (
-    <section id="pengalaman" className="bg-white dark:bg-slate-950 py-16 md:py-24">
+    <section id="pengalaman" className="bg-white dark:bg-slate-950 py-16 md:py-[4.5rem]">
       <div className="max-w-4xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 15 }}

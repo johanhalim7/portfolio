@@ -8,7 +8,7 @@ export default function Skills() {
   const { lang, t } = useLanguage();
 
   return (
-    <section id="keahlian" className="bg-slate-50/70 dark:bg-slate-900/40 py-16 md:py-24">
+    <section id="keahlian" className="bg-slate-50/70 dark:bg-slate-900/40 py-16 md:py-[4.5rem]">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 15 }}

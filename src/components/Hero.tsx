@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <section
       id="beranda"
-      className="min-h-[90vh] flex items-center justify-center pt-24 pb-16 bg-white dark:bg-slate-950 relative overflow-hidden"
+      className="min-h-[90vh] lg:min-h-[82vh] flex items-center justify-center pt-24 pb-16 lg:pb-12 bg-white dark:bg-slate-950 relative overflow-hidden"
     >
       {/* Subtle Background Mesh / Gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[450px] opacity-35 dark:opacity-20 pointer-events-none">
@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight"
+          className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight"
         >
           {lang === 'id' ? 'Halo, saya ' : "Hi, I'm "}
           <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">

@@ -26,7 +26,7 @@ export default function Projects() {
   const [selectedCaseStudy, setSelectedCaseStudy] = useState<Project | null>(null);
 
   return (
-    <section id="proyek" className="bg-slate-50/70 dark:bg-slate-900/40 py-16 md:py-24">
+    <section id="proyek" className="bg-slate-50/70 dark:bg-slate-900/40 py-16 md:py-[4.5rem]">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -62,7 +62,7 @@ export default function Projects() {
               <div className="grid lg:grid-cols-12 gap-0 items-stretch">
                 {/* Visual Mockup Preview */}
                 <div className="lg:col-span-6 bg-slate-950 flex items-center justify-center relative overflow-hidden group">
-                  <div className="w-full h-full relative aspect-video lg:aspect-auto lg:min-h-[360px]">
+                  <div className="w-full h-full relative aspect-video lg:aspect-auto lg:min-h-[300px]">
                     <Image
                       src={project.image}
                       alt={project.title}
