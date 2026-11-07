@@ -85,7 +85,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2 }}
-          className="text-sm md:text-base text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed space-y-3.5 text-left md:text-center"
+          className="text-sm md:text-base text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed space-y-3.5 text-center"
         >
           {summaryParagraphs.map((paragraph, idx) => (
             <p key={idx}>{paragraph}</p>
