@@ -60,7 +60,7 @@ export default function Hero() {
           className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight"
         >
           {lang === 'id' ? 'Halo, saya ' : "Hi, I'm "}
-          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          <span className="whitespace-nowrap bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             {profile.name}
           </span>
         </motion.h1>
