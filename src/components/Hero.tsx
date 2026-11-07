@@ -27,11 +27,6 @@ const highlightIcons = [
 export default function Hero() {
   const { lang, t } = useLanguage();
 
-  const summaryParagraphs = profile.summary[lang]
-    .split('\n\n')
-    .map((p) => p.trim())
-    .filter(Boolean);
-
   const highlights = profile.highlights[lang];
 
   return (
@@ -79,18 +74,6 @@ export default function Hero() {
         >
           {profile.title[lang]}
         </motion.h2>
-
-        {/* Value Proposition & Summary (Fix split bug properly) */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="text-sm md:text-base text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed space-y-3.5 text-center"
-        >
-          {summaryParagraphs.map((paragraph, idx) => (
-            <p key={idx}>{paragraph}</p>
-          ))}
-        </motion.div>
 
         {/* Highlights / Metric Badges */}
         <motion.div
