@@ -141,7 +141,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/documents/cv.pdf"
+            href={lang === 'en' ? '/documents/cv-en.pdf' : '/documents/cv.pdf'}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium transition-all active:scale-95 shadow-xs"
